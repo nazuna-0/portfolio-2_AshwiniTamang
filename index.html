@@ -1,1 +1,104 @@
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header id="hero">
+
+   <!--Loop Video-->
+    <video autoplay loop muted id="video-background">
+        <source src="image/lucy.mp4" type="video/mp4">
+    </video>
+
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <span class="logo">wini</span>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-expanded="false" id="menu-button">☰</button>
+    </nav>
+
+   <div class="hero-content">
+      <h1>Ashwini Tamang</h1>
+      <p>Game Designer</p>
+   </div>
+</header>
+
+<!----------------ABOUT ME----------------->
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <p>I am an ethusiastic gamer, who wants make a 2D game from scratch.</p>
+</section>
+
+<!-----------------SKILLS------------------>
+<section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">UNity</div>
+    </div>
+</section>
+
+<!---------------PROJECTS------------------->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div id="projects-grid">
+        <div class="project-card">
+            <img src="image/fish.jpg" alt="Screenshot of Project 1" class="project-image">
+            <h3>Project 1</h3>
+            <p>A responsive website layout using CSS Grid.</p>
+        </div>
+        <div class="project-card">
+            <img src="image/fish.jpg" alt="Screenshot of Project 2" class="project-image">
+            <h3>Project 2</h3>
+            <p>JavaScript interactive application with DOM manipulation.</p>
+        </div>
+        <div class="project-card">
+            <img src="image/fish.jpg" alt="Screenshot of Project 3" class="project-image">
+            <h3>Project 3</h3>
+            <p>Portfolio website built with video background.</p>
+        </div>
+    </div>
+</section>
+
+
+<!------------CONNECT---------------------->
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <form id="contact-form-id">
+        <label>Name:</label>
+        <input type="text" id="name">
+
+        <label>Email:</label>
+        <input type="email" id="email">
+
+        <button type="submit">Send</button>
+    </form>
+
+    <div id="form-message"></div>
+</section>
+
+
+<footer id="foot">
+    <p>© 2025 Ashwini</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
