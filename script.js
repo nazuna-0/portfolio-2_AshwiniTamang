@@ -27,7 +27,6 @@ form.addEventListener('submit', (event) => {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
 
-    // If either field is empty → popup box + red message
     if (name === "" || email === "") {
         alert("Please fill in both Name and Email!");
         messageDiv.textContent = "Please fill out all fields.";
